@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    overflow: hidden;
+    user-select: none;
+    background-color: #445588;
+}
+
+.viewport {
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translateY(-50%) translateX(-50%);
+    filter: drop-shadow(-20px 30px 15px rgba(0, 0, 0, 0.5));
+}
+
+.options {
+    left: 0;
+    right: 0;
+    position: fixed;
+    text-align: center;
+}
+
+.options img {
+    margin: 8px;
+    max-width: 8%;
+    height: auto;
+    transform: scale(0.8);
+    transition-duration: 0.4s;
+    transition-property: transform, opacity, filter;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+}
+
+.options img:hover {
+    transform: scale(1.1);
+}
